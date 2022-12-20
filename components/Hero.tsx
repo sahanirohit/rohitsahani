@@ -19,16 +19,28 @@ const Hero = () => {
             Want to know more about me? Let's Connect!
           </h2>
           <div className="flex gap-4 text-lg">
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="http://twitter.com/rohit_sahani11"
+              target="_blank"
+              rel="noopener noreferrer">
               <i className="fa-brands hover:bg-sky-400 hover:text-white cursor-pointer ring-2 ring-sky-400 text-sky-400 icons fa-twitter"></i>
             </a>
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="http://instagram.com/cleanuidesign"
+              target="_blank"
+              rel="noopener noreferrer">
               <i className="fa-brands hover:bg-pink-500 hover:text-white cursor-pointer ring-2 ring-pink-500 text-pink-500 icons fa-instagram"></i>
             </a>
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/rohitsahani01/"
+              target="_blank"
+              rel="noopener noreferrer">
               <i className="fa-brands hover:bg-blue-600 hover:text-white cursor-pointer ring-2 ring-blue-600 text-blue-600 icons fa-linkedin"></i>
             </a>
-            <a href="http://" target="_blank" rel="noopener noreferrer">
+            <a
+              href="http://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer">
               <i className="fa-brands hover:bg-red-600 hover:text-white cursor-pointer ring-2 ring-red-600 text-red-600 icons fa-youtube"></i>
             </a>
           </div>

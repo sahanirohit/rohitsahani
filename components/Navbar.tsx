@@ -9,7 +9,7 @@ const Navbar = () => {
   const dispatch = useDispatch();
   return (
     <header
-      className={`h-24 flex fixed top-0 z-[1] w-full items-center justify-center`}>
+      className={`h-24 flex fixed top-0 bg-white z-[1] w-full items-center justify-center`}>
       <nav
         className={`max-w-screen-xl  px-4 xl:px-0 mx-auto flex items-center justify-between w-full`}>
         <div className="flex items-center w-full justify-between md:w-auto z-50">
@@ -71,9 +71,11 @@ const Navbar = () => {
               Testimonials
             </Link>
           </li>
-          <button onClick={() => dispatch(close())} className="btn">
-            Sign In
-          </button>
+          <li>
+            <button onClick={() => dispatch(close())} className="btn">
+              Sign In
+            </button>
+          </li>
         </ul>
         {/* Desktop Nav */}
         <ul className="md:flex items-center space-x-6 font-serif font-medium hidden">
