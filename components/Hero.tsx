@@ -1,22 +1,21 @@
-import Image from "next/legacy/image";
 import React from "react";
-import heroImage from "../public/hero.jpg";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 const Hero = () => {
   return (
-    <div className="w-full h-screen bg-white overflow-hidden">
+    <div className="w-full pt-32 z-40 bg-white overflow-hidden">
       <div className="grid lg:grid-cols-2 w-full h-full max-w-screen-xl mx-auto place-content-center text-center px-4 xl:px-0">
         <div className="text-center lg:text-left flex items-center justify-center lg:items-start flex-col space-y-4">
           <h1 className="text-5xl sm:text-7xl max-w-sm sm:max-w-xl  font-serif font-bold">
             Frontend Developer
           </h1>
           <p className="max-w-lg">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Repudiandae, laudantium, ullam reiciendis velit, sunt sint dolorum
-            necessitatibus quam aut dicta non consequuntur placeat doloremque?
+            I'm a front-end developer with a focus on clean, lightweight design.
+            I love to work with startups and small businesses to help them
+            establish their brand identity.
           </p>
           <h2 className="font-semibold text-lg italic">
-            Want to know more about me? Let's Connect!
+            Want to know more about me? Connect with me!
           </h2>
           <div className="flex gap-4 text-lg">
             <a
@@ -51,15 +50,12 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="relative h-96 animate hidden lg:block">
-          <Image
-            priority
-            placeholder="blur"
-            src={heroImage}
-            alt="hero"
-            layout="fill"
-            objectFit="contain"
-          />
+        <div className="">
+          <Player
+            autoplay
+            loop
+            src="https://assets6.lottiefiles.com/private_files/lf30_y4x6f4rs.json"
+            className="sm:w-[500px] w-[300px] h-[300px] sm:h-[500px]"></Player>
         </div>
       </div>
     </div>

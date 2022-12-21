@@ -9,11 +9,13 @@ const Navbar = () => {
   const dispatch = useDispatch();
   return (
     <header
-      className={`h-24 flex fixed top-0 bg-white z-[1] w-full items-center justify-center`}>
+      className={`h-24 flex w-full bg-white z-50 fixed top-0 items-center justify-center`}>
       <nav
-        className={`max-w-screen-xl  px-4 xl:px-0 mx-auto flex items-center justify-between w-full`}>
+        className={`max-w-screen-xl shadow-md sm:shadow-none bg-white h-24  px-4 xl:px-0 mx-auto flex items-center justify-between w-full`}>
         <div className="flex items-center w-full justify-between md:w-auto z-50">
-          <h1 className="text-2xl font-black font-[roboto]">& CUI</h1>
+          <Link href={"/"}>
+            <h1 className="text-2xl font-black font-[roboto]">& CUI</h1>
+          </Link>
           <div className="md:hidden text-2xl">
             {nav ? (
               <i
@@ -43,7 +45,7 @@ const Navbar = () => {
             <Link
               onClick={() => dispatch(close())}
               className={`link`}
-              href={"/"}>
+              href={"/about"}>
               About
             </Link>
           </li>
@@ -51,7 +53,7 @@ const Navbar = () => {
             <Link
               onClick={() => dispatch(close())}
               className={`link`}
-              href={"/"}>
+              href={"/services"}>
               Services
             </Link>
           </li>
@@ -59,7 +61,7 @@ const Navbar = () => {
             <Link
               onClick={() => dispatch(close())}
               className={`link`}
-              href={"/"}>
+              href={"/portfolio"}>
               Portfolio
             </Link>
           </li>
@@ -67,7 +69,7 @@ const Navbar = () => {
             <Link
               onClick={() => dispatch(close())}
               className={`link`}
-              href={"/"}>
+              href={"/testimonials"}>
               Testimonials
             </Link>
           </li>
@@ -85,22 +87,22 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link className={`link`} href={"/"}>
+            <Link className={`link`} href={"/about"}>
               About
             </Link>
           </li>
           <li>
-            <Link className={`link`} href={"/"}>
+            <Link className={`link`} href={"/services"}>
               Services
             </Link>
           </li>
           <li>
-            <Link className={`link`} href={"/"}>
+            <Link className={`link`} href={"/portfolio"}>
               Portfolio
             </Link>
           </li>
           <li>
-            <Link className={`link`} href={"/"}>
+            <Link className={`link`} href={"/testimonials"}>
               Testimonials
             </Link>
           </li>
