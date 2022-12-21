@@ -3,9 +3,9 @@ import { Player } from "@lottiefiles/react-lottie-player";
 
 const Hero = () => {
   return (
-    <div className="w-full pt-32 z-40 bg-white overflow-hidden">
+    <div className="w-full pt-32 pb-8 z-40 bg-white overflow-hidden">
       <div className="grid lg:grid-cols-2 w-full h-full max-w-screen-xl mx-auto place-content-center text-center px-4 xl:px-0">
-        <div className="text-center lg:text-left flex items-center justify-center lg:items-start flex-col space-y-4">
+        <div className="text-center lg:order-1 order-2 lg:text-left flex items-center justify-center lg:items-start flex-col space-y-4">
           <h1 className="text-5xl sm:text-7xl max-w-sm sm:max-w-xl  font-serif font-bold">
             Frontend Developer
           </h1>
@@ -44,13 +44,18 @@ const Hero = () => {
             </a>
           </div>
           <div className="pt-6">
-            <button className="px-4 hover:text-white hover:bg-black duration-200 text-lg py-1.5 ring-2 ring-black rounded-md flex items-center">
-              <i>Let's Talk!</i>
-              <i className="fa-brands fa-whatsapp text-green-500 pl-2"></i>
-            </button>
+            <a
+              href="http://wa.me/918957912038"
+              target="_blank"
+              rel="noopener noreferrer">
+              <button className="px-4 hover:text-white hover:bg-black duration-200 text-lg py-1.5 ring-2 ring-black rounded-md flex items-center">
+                <i>Let's Talk!</i>
+                <i className="fa-brands fa-whatsapp text-green-500 pl-2"></i>
+              </button>
+            </a>
           </div>
         </div>
-        <div className="">
+        <div className="lg:order-2 order-1">
           <Player
             autoplay
             loop
