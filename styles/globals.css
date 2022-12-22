@@ -6,9 +6,15 @@
   box-sizing: border-box;
 }
 
+@layer base {
+  body {
+    @apply scroll-smooth;
+  }
+}
+
 @layer components {
   .btn {
-    @apply hover:bg-black ring-black text-sm py-1.5 px-3 ring-1 rounded-md duration-150 font-semibold font-[roboto] hover:text-white;
+    @apply hover:bg-black ring-black text-sm py-1.5 w-20 ring-1 rounded-sm duration-150 font-semibold font-[roboto] hover:text-white;
   }
   .link {
     @apply hover:border-b-2 hover:border-sky-400 py-1;
@@ -24,7 +30,7 @@
   }
 }
 
-.animate {
+.heroImage {
   animation: mymove 5s infinite;
 }
 @keyframes mymove {

@@ -7,11 +7,19 @@ import { RootState } from "../store";
 const Navbar = () => {
   const nav = useSelector((state: RootState) => state.nav.value);
   const dispatch = useDispatch();
+
+  if (typeof window !== "undefined") {
+    const body = document.querySelector("body");
+    nav
+      ? body?.classList.add("overflow-hidden")
+      : body?.classList.remove("overflow-hidden");
+  }
+
   return (
     <header
-      className={`h-24 flex w-full bg-white z-50 fixed top-0 items-center justify-center`}>
+      className={`sm:h-24 h-16 flex w-full bg-white z-50 fixed top-0 items-center justify-center`}>
       <nav
-        className={`max-w-screen-xl shadow-md sm:shadow-none bg-white h-24  px-4 xl:px-0 mx-auto flex items-center justify-between w-full`}>
+        className={`max-w-screen-xl shadow-md sm:shadow-none bg-white sm:h-24 h-16 px-4 xl:px-0 mx-auto flex items-center justify-between w-full`}>
         <div className="flex items-center w-full justify-between md:w-auto z-50">
           <Link href={"/"}>
             <h1 className="text-2xl font-black font-[roboto]">& CUI</h1>

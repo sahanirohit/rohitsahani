@@ -23,17 +23,18 @@ const Services = () => {
         <h1 className="text-center text-3xl text-gray-900 font-serif font-medium uppercase">
           Services
         </h1>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 py-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 py-8">
           {serviceData.map((item, index) => (
             <div
               key={index}
-              className="rounded-md flex flex-col justify-around p-10">
+              className="rounded-md hover:-translate-y-2 duration-500 flex flex-col justify-around p-10">
               <Image
                 src={item}
                 alt="service"
                 width={350}
                 height={350}
                 objectFit="contain"
+                placeholder="blur"
               />
             </div>
           ))}

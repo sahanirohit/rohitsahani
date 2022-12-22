@@ -19,6 +19,7 @@ const Company = () => {
             alt="company image"
             layout="fill"
             objectFit="contain"
+            placeholder="blur"
           />
         </div>
       ))}

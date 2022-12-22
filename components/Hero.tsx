@@ -1,10 +1,11 @@
 import React from "react";
-import { Player } from "@lottiefiles/react-lottie-player";
+import heroImage from "../public/hero.jpg";
+import Image from "next/legacy/image";
 
 const Hero = () => {
   return (
-    <div className="w-full pt-32 pb-8 z-40 bg-white overflow-hidden">
-      <div className="grid lg:grid-cols-2 w-full h-full max-w-screen-xl mx-auto place-content-center text-center px-4 xl:px-0">
+    <div className="w-full pt-16 sm:pt-32 pb-8 z-40 bg-white overflow-hidden">
+      <div className="grid lg:grid-cols-2 gap-10 lg:gap-4 w-full h-full max-w-screen-xl mx-auto place-content-center text-center px-4 xl:px-0">
         <div className="text-center lg:order-1 order-2 lg:text-left flex items-center justify-center lg:items-start flex-col space-y-4">
           <h1 className="text-5xl sm:text-7xl max-w-sm sm:max-w-xl  font-serif font-bold">
             Frontend Developer
@@ -56,11 +57,15 @@ const Hero = () => {
           </div>
         </div>
         <div className="lg:order-2 order-1">
-          <Player
-            autoplay
-            loop
-            src="https://assets6.lottiefiles.com/private_files/lf30_y4x6f4rs.json"
-            className="sm:w-[500px] w-[300px] h-[300px] sm:h-[500px]"></Player>
+          <div className="relative h-96 heroImage">
+            <Image
+              src={heroImage}
+              alt="hero image"
+              layout="fill"
+              objectFit="contain"
+              placeholder="blur"
+            />
+          </div>
         </div>
       </div>
     </div>
