@@ -68,7 +68,7 @@ const Portfolio = () => {
               </div>
 
               {/* Image Section */}
-              <div className="relative basis-1/2 h-[36rem] border">
+              <div className="relative basis-1/2 h-96 sm:h-[36rem] border">
                 <Image
                   src={project.image}
                   alt="amazon-clone"
