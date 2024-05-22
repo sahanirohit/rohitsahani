@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-md">
-      <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">

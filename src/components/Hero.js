@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="flex flex-col bg-[url('/bg.png')] bg-cover bg-no-repeat">
       <Navbar />
-      <div className="grid grid-cols-1 md:grid-cols-2 text-center place-items-center md:place-items-start md:p-8 md:text-left mx-auto max-w-screen-xl w-full px-4 sm:px-6 lg:px-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 text-center place-items-center md:place-items-start md:p-8 md:text-left mx-auto max-w-screen-xl w-full px-4 sm:px-6 lg:px-4">
         <div className="flex flex-col place-content-center mt-4 md:mt-0 md:row-start-1 space-y-2 h-full row-start-2">
           <h2 className=" text-3xl text-[#FF6B01]">Hello I'm</h2>
           <h1 className=" md:text-6xl text-5xl">Rohit Sahani</h1>

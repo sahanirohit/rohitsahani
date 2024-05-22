@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Portfolio = () => {
   return (
-    <div className="mx-auto max-w-screen-2xl w-full px-4 sm:px-6 lg:px-0 py-4">
+    <div className="mx-auto max-w-screen-2xl w-full px-4 sm:px-6 lg:px-4 py-4">
       <h1 className="text-center text-4xl font-bold mb-8">My Portfolio</h1>
       <div className="grid gap-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
         <div className="bg-slate-50 rounded-lg">

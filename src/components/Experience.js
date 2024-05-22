@@ -29,7 +29,7 @@ const WorkExperience = () => {
   ];
 
   return (
-    <div className="max-w-screen-2xl w-full px-4 sm:px-6 lg:px-0 mx-auto p-12">
+    <div className="max-w-screen-2xl w-full px-4 sm:px-6 lg:px-4 mx-auto p-12">
       <h2 className="text-3xl font-bold mb-8 text-center">
         My Work Experience
       </h2>
