@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-[#424242] py-8">
-      <div className="mx-auto max-w-screen-lg w-full">
+      <div className="mx-auto max-w-screen-lg w-full px-4 sm:px-6 lg:px-4">
         <div className="flex items-start space-y-2 flex-col md:flex-row md:items-center flex-wrap justify-between">
           <div className="flex-shrink-0">
             <img className="h-20" src="/logo_white.png" alt="Logo" />
@@ -12,10 +12,10 @@ const Footer = () => {
           <div className="flex">
             <input
               type="text"
-              className="px-4 py-3 ring-2 ring-gray-50 focus:ring-orange-500 focus:outline-none rounded-tl-lg rounded-bl-lg placeholder:text-gray-400 w-full"
+              className="px-4 py-3 ring-2 ring-gray-50 focus:ring-purple focus:outline-none rounded-tl-lg rounded-bl-lg placeholder:text-grey w-full"
               placeholder="Enter your email address"
             />
-            <button className="px-4 py-3 ring-2 ring-orange-500 bg-orange-500 text-white font-bold rounded-tr-lg rounded-br-lg">
+            <button className="px-4 py-3 ring-2 ring-purple bg-purple text-white font-bold rounded-tr-lg rounded-br-lg">
               SUBSCRIBE
             </button>
           </div>
