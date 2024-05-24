@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="flex">
             <input
               type="text"
-              className="px-4 py-3 ring-2 ring-gray-50 focus:ring-purple focus:outline-none rounded-tl-lg rounded-bl-lg placeholder:text-grey w-full"
+              className="px-4 py-3 ring-2 ring-lightpurple focus:ring-purple focus:outline-none rounded-tl-lg rounded-bl-lg placeholder:text-black w-full"
               placeholder="Enter your email address"
             />
             <button className="px-4 py-3 ring-2 ring-purple bg-purple text-white font-bold rounded-tr-lg rounded-br-lg">

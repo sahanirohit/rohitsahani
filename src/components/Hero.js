@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -27,10 +28,15 @@ const Hero = () => {
           </div>
           <h2 className="text-2xl font-bold pt-4">Get in touch with us</h2>
           <div className="md:text-3xl text-xl space-x-4">
-            <i className="fa-brands fa-facebook"></i>
-            <i className="fa-brands fa-twitter"></i>
-            <i className="fa-brands fa-instagram"></i>
-            <i className="fa-brands fa-linkedin"></i>
+            <Link href="https://x.com/Rohit_Sahani11">
+              <i className="fa-brands fa-twitter hover:text-twitter"></i>
+            </Link>
+            <Link href="https://www.instagram.com/rohit.sahani11">
+              <i className="fa-brands fa-instagram hover:text-instagram"></i>
+            </Link>
+            <Link href="https://www.linkedin.com/in/rohitsahani01/">
+              <i className="fa-brands fa-linkedin hover:text-linkedin"></i>
+            </Link>
           </div>
         </div>
         <div className="bg-[url('/hero.png')] bg-contain bg-no-repeat order-1 md:order-2 h-80 md:h-[32rem] w-full bg-center "></div>
