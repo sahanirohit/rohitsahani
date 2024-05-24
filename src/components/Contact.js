@@ -2,126 +2,89 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="mx-auto max-w-screen-2xl w-full px-4 sm:px-6 lg:px-4 py-4">
-      <h1 className="text-center text-4xl font-bold">Contact</h1>
-      <h1 className="text-center text-4xl font-bold mb-8 text-orange-500">
-        Let's Discuss Your Project
-      </h1>
-      <div className="grid gap-8 md:grid-cols-3">
-        <div className=" space-y-4">
-          <div className="flex items-center p-4 bg-white rounded-lg shadow-md">
-            <div className="flex items-center justify-center w-12 h-12 bg-orange-500 rounded-full">
-              <svg
-                className="w-6 h-6 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M3 5.879A1.879 1.879 0 014.879 4h2.243a1.879 1.879 0 011.878 1.633l.417 3.746a1.879 1.879 0 01-.544 1.601l-1.372 1.372a11.042 11.042 0 005.368 5.368l1.372-1.372a1.879 1.879 0 011.601-.544l3.746.417A1.879 1.879 0 0120 16.879v2.243A1.879 1.879 0 0118.121 21H18A15 15 0 013 5.879z"></path>
-              </svg>
+    <div className="bg-[#813CEB]">
+      <div className="mx-auto grid max-w-screen-lg md:grid-cols-2 gap-4  px-6 py-8 lg:px-4">
+        <div className="">
+          <h2 className="text-lg font-medium text-white font-serif">
+            - Contact Us
+          </h2>
+          <h1 className="sm:text-4xl text-3xl text-white font-bold font-serif">
+            Let's <span className="text-[#A6EB3C]">Connect</span> & <br />{" "}
+            <span className="text-[#A6EB3C]">Collaborate</span>
+          </h1>
+          <p className="text-white mt-4 sm:text-base text-sm">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+            officia dolores odio consectetur facere enim explicabo dignissimos
+            repudiandae ab officiis at dicta tenetur voluptas perferendis
+            voluptatum, cupiditate eius ea harum!
+          </p>
+          <div className="font-normal mt-6 flex flex-col gap-y-4 text-white text-base sm:text-lg">
+            <div className="inline-flex items-center gap-4">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                <i className="fa-solid fa-phone text-purple "></i>
+              </div>
+              <p className="">+91 89579 12038</p>
             </div>
-            <div className="ml-4">
-              <p className="text-gray-800">Mobile</p>
-              <p className="text-gray-500">+91 89579 12038</p>
+            <div className="inline-flex items-center gap-4">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                <i className="fa-solid fa-envelope text-purple "></i>
+              </div>
+              <p className="">rohitjobeis@gmail.com</p>
             </div>
-          </div>
-          <div className="flex items-center p-4 bg-white rounded-lg shadow-md">
-            <div className="flex items-center justify-center w-12 h-12 bg-orange-500 rounded-full">
-              <i className="fa-solid text-lg text-white fa-envelope"></i>
+            <div className="inline-flex items-center gap-4">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                <i className="fa-solid fa-globe text-purple "></i>
+              </div>
+              <p className="">rohitsahani.com</p>
             </div>
-            <div className="ml-4">
-              <p className="text-gray-800">Email</p>
-              <p className="text-gray-500">rohitjobeis@gmail.com</p>
-            </div>
-          </div>
-          <div className="flex items-center p-4 bg-white rounded-lg shadow-md">
-            <div className="flex items-center justify-center w-12 h-12 bg-orange-500 rounded-full">
-              <i className="fa-solid text-lg text-white fa-location-dot"></i>
-            </div>
-            <div className="ml-4">
-              <p className="text-gray-800">Address</p>
-              <p className="text-gray-500">Surat, Gujarat - India</p>
+            <div className="inline-flex items-center gap-4">
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                <i className="fa-solid fa-location-dot text-purple "></i>
+              </div>
+              <p className="">Surat, Gujarat - India</p>
             </div>
           </div>
         </div>
-        <div className=" md:col-span-2">
-          <form action="#" method="POST">
-            <div className="grid grid-cols-2 gap-4">
-              <div className="mb-4">
-                <label
-                  htmlFor="full_name"
-                  className="block text-gray-700 font-semibold mb-2">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  id="full_name"
-                  name="full_name"
-                  className="form-input w-full rounded-lg ring-2 ring-gray-200 py-3 px-4"
-                />
+        <div className="">
+          <form action="" className="grid grid-cols-2 gap-4 text-sm sm:text-lg">
+            <input
+              type="text"
+              className="px-4 py-4 bg-[#ae7afc] rounded-xl placeholder:text-white focus:outline-none text-white"
+              placeholder="First Name *"
+            />
+            <input
+              type="text"
+              className="px-4 py-4 bg-[#ae7afc] rounded-xl placeholder:text-white focus:outline-none text-white"
+              placeholder="Last Name *"
+            />
+            <input
+              type="email"
+              className="px-4 py-4 bg-[#ae7afc] rounded-xl placeholder:text-white focus:outline-none text-white"
+              placeholder="Email *"
+            />
+            <input
+              type="number"
+              className="px-4 py-4 bg-[#ae7afc] rounded-xl placeholder:text-white focus:outline-none text-white"
+              placeholder="Phone Number *"
+            />
+            <input
+              type="text"
+              className="px-4 py-4 bg-[#ae7afc] rounded-xl placeholder:text-white col-span-2 focus:outline-none text-white"
+              placeholder="Subject *"
+            />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="6"
+              className="col-span-2 px-4 py-4 bg-[#ae7afc] rounded-xl placeholder:text-white"
+              placeholder="Message *"></textarea>
+            <div className="relative inline-flex w-52 shrink-0 bg-white rounded-full gap-2">
+              <div className="w-10 h-10 rounded-full shrink-0 bg-[#813CEB] m-1 flex items-center justify-center">
+                <i className="fa-solid fa-arrow-right text-white text-lg"></i>
               </div>
-              <div className="mb-4">
-                <label
-                  htmlFor="email"
-                  className="block text-gray-700 font-semibold mb-2">
-                  Your Email
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="form-input w-full py-3 rounded-lg px-4 ring-2 ring-gray-200"
-                />
-              </div>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              <div className="mb-4">
-                <label
-                  htmlFor="phone"
-                  className="block text-gray-700 font-semibold mb-2">
-                  Phone Number
-                </label>
-                <input
-                  type="text"
-                  id="phone"
-                  name="phone"
-                  className="form-input w-full py-3 rounded-lg px-4 ring-2 ring-gray-200"
-                />
-              </div>
-              <div className="mb-4">
-                <label
-                  htmlFor="budget"
-                  className="block text-gray-700 font-semibold mb-2">
-                  Budget
-                </label>
-                <input
-                  type="text"
-                  id="budget"
-                  name="budget"
-                  className="form-input w-full py-3 rounded-lg px-4 ring-2 ring-gray-200"
-                />
-              </div>
-            </div>
-            <div className="mb-4">
-              <label
-                htmlFor="message"
-                className="block text-gray-700 font-semibold mb-2">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                className="form-textarea w-full px-4 py-3 ring-2 ring-gray-200 rounded-lg"
-              />
-            </div>
-            <div className="flex justify-center md:justify-end">
-              <button className="px-14 py-2 rounded-full ring-2 ring-[#FF6B01] bg-[#FF6B01] hover:bg-white hover:text-black duration-200 text-white font-bold">
-                Submit
+              <button className="bg-[#A6EB3C] h-full w-full rounded-full text-sm">
+                Send Message
               </button>
             </div>
           </form>

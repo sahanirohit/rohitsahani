@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-white shadow-md">
-      <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-4">
+      <div className="mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -42,16 +42,16 @@ const Navbar = () => {
             <div className="flex space-x-4">
               <Link
                 href="/"
-                className="rounded-md px-3 py-2 text-sm font-medium  text-[#FF6B01]  hover:text-[#FF6B01]">
+                className="rounded-md px-3 py-2 text-sm font-medium  hover:text-purple">
                 Home
               </Link>
               <Link
                 href="/about"
-                className="rounded-md px-3 py-2 text-sm font-medium text-gray-700  hover:text-[#FF6B01]">
+                className="rounded-md px-3 py-2 text-sm font-medium  hover:text-purple">
                 About
               </Link>
               <div className="relative group">
-                <button className="rounded-md px-3 py-2 text-sm font-medium text-gray-700  hover:text-[#FF6B01]">
+                <button className="rounded-md px-3 py-2 text-sm font-medium  hover:text-purple">
                   Services
                   <svg
                     className="-mt-1 ml-1 inline-block h-4 w-4 transform rotate-0"
@@ -69,29 +69,29 @@ const Navbar = () => {
                 <div className="absolute hidden min-w-max group-hover:block bg-white rounded-md shadow-lg">
                   <Link
                     href="/services/web-development"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-300">
+                    className="block px-4 py-2 text-sm hover:text-purple hover:bg-lightgreen/40">
                     Web Development
                   </Link>
                   <Link
                     href="/services/app-development"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-300">
+                    className="block px-4 py-2 text-sm hover:text-purple hover:bg-lightgreen/40">
                     App Development
                   </Link>
                   <Link
                     href="/services/software-development"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-300">
+                    className="block px-4 py-2 text-sm hover:text-purple hover:bg-lightgreen/40">
                     Software Development
                   </Link>
                   <Link
                     href="/services/ecommerce-website"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-300">
+                    className="block px-4 py-2 text-sm hover:text-purple hover:bg-lightgreen/40">
                     Ecommerce Website
                   </Link>
                 </div>
               </div>
               <Link
                 href="/contact"
-                className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:text-[#FF6B01]">
+                className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple">
                 Contact
               </Link>
             </div>
@@ -105,16 +105,16 @@ const Navbar = () => {
         <div className="space-y-1 px-2 pb-3 pt-2">
           <Link
             href="/"
-            className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-300 hover:text-black">
+            className="block rounded-md px-3 py-2 text-base font-medium hover:text-purple">
             Home
           </Link>
           <Link
             href="/about"
-            className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-300 hover:text-black">
+            className="block rounded-md px-3 py-2 text-base font-medium hover:text-purple">
             About
           </Link>
-          <div className="relative group">
-            <button className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-300 hover:text-black">
+          <div className="relative group items-center">
+            <button className="rounded-md px-3 py-2 text-sm font-medium hover:text-purple">
               Services
               <svg
                 className="-mt-1 ml-1 inline-block h-4 w-4"
@@ -132,29 +132,29 @@ const Navbar = () => {
             <div className="absolute hidden group-hover:block rounded-md bg-gray-200 shadow-lg">
               <Link
                 href="/services/web-development"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-300">
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-lightgreen/40">
                 Web Development
               </Link>
               <Link
                 href="/services/app-development"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-300">
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-lightgreen/40">
                 App Development
               </Link>
               <Link
                 href="/services/software-development"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-300">
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-lightgreen/40">
                 Software Development
               </Link>
               <Link
                 href="/services/ecommerce-website"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-300">
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-lightgreen/40">
                 Ecommerce Website
               </Link>
             </div>
           </div>
           <Link
             href="/contact"
-            className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-300 hover:text-black">
+            className="block rounded-md px-3 py-2 text-base font-medium hover:text-purple">
             Contact
           </Link>
         </div>

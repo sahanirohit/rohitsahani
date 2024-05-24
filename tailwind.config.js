@@ -16,6 +16,16 @@ module.exports = {
     fontFamily: {
       sans: ["Roboto", "sans-serif"], // Replace 'Roboto' with your custom font
     },
+    colors: {
+      transparent: "transparent",
+      current: "currentColor",
+      white: "#ffffff",
+      black: "#000000",
+      grey: "#F4F3F6",
+      purple: "#813CEB",
+      lightpurple: "#A76DF6",
+      lightgreen: "#A6EC3C",
+    },
   },
   plugins: [],
 };
