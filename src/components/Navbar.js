@@ -50,9 +50,14 @@ const Navbar = () => {
                 className="rounded-md px-3 py-2 text-sm font-medium  hover:text-purple">
                 About
               </Link>
+              <Link
+                href="/portfolio"
+                className="block rounded-md px-3 py-2 text-base font-medium hover:text-purple">
+                Portfolio
+              </Link>
               <div className="relative group">
                 <button className="rounded-md px-3 py-2 text-sm font-medium  hover:text-purple">
-                  Services
+                  <Link href="/services">Services</Link>
                   <svg
                     className="-mt-1 ml-1 inline-block h-4 w-4 transform rotate-0"
                     fill="none"
@@ -68,22 +73,22 @@ const Navbar = () => {
                 </button>
                 <div className="absolute hidden min-w-max group-hover:block bg-white rounded-md shadow-lg">
                   <Link
-                    href="/services/web-development"
+                    href="/services"
                     className="block px-4 py-2 text-sm hover:text-purple hover:bg-lightgreen/40">
                     Web Development
                   </Link>
                   <Link
-                    href="/services/app-development"
+                    href="/services"
                     className="block px-4 py-2 text-sm hover:text-purple hover:bg-lightgreen/40">
                     App Development
                   </Link>
                   <Link
-                    href="/services/software-development"
+                    href="/services"
                     className="block px-4 py-2 text-sm hover:text-purple hover:bg-lightgreen/40">
                     Software Development
                   </Link>
                   <Link
-                    href="/services/ecommerce-website"
+                    href="/services"
                     className="block px-4 py-2 text-sm hover:text-purple hover:bg-lightgreen/40">
                     Ecommerce Website
                   </Link>
@@ -113,6 +118,11 @@ const Navbar = () => {
             className="block rounded-md px-3 py-2 text-base font-medium hover:text-purple">
             About
           </Link>
+          <Link
+            href="/portfolio"
+            className="block rounded-md px-3 py-2 text-base font-medium hover:text-purple">
+            Portfolio
+          </Link>
           <div className="relative group items-center">
             <button className="rounded-md px-3 py-2 text-sm font-medium hover:text-purple">
               Services
@@ -131,22 +141,22 @@ const Navbar = () => {
             </button>
             <div className="absolute hidden group-hover:block rounded-md bg-gray-200 shadow-lg">
               <Link
-                href="/services/web-development"
+                href="/services"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-lightgreen/40">
                 Web Development
               </Link>
               <Link
-                href="/services/app-development"
+                href="/services"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-lightgreen/40">
                 App Development
               </Link>
               <Link
-                href="/services/software-development"
+                href="/services"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-lightgreen/40">
                 Software Development
               </Link>
               <Link
-                href="/services/ecommerce-website"
+                href="/services"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-lightgreen/40">
                 Ecommerce Website
               </Link>

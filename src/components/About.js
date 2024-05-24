@@ -17,8 +17,10 @@ const About = () => {
           <span className="text-purple">Sahani?</span>
         </h1>
         <p className="">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque neque
-          soluta adipisci voluptates voluptate facere veniam.
+          With 1.5 years experience as a professinal Web developer. I have
+          acquired the skills and kowledge necessary to make your project a
+          success. I enjoy every step of the design process. For discussion and
+          collaboration.
         </p>
         <div className="flex justify-between">
           <div className="">
