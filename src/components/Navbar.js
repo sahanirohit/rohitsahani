@@ -39,15 +39,15 @@ const Navbar = () => {
 
           {/* Navigation links */}
           <div className="md:block hidden">
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 items-center justify-center">
               <Link
                 href="/"
-                className="rounded-md px-3 py-2 text-sm font-medium  hover:text-purple">
+                className="rounded-md px-3 py-2 text-base font-medium  hover:text-purple">
                 Home
               </Link>
               <Link
                 href="/about"
-                className="rounded-md px-3 py-2 text-sm font-medium  hover:text-purple">
+                className="rounded-md px-3 py-2 text-base font-medium  hover:text-purple">
                 About
               </Link>
               <Link
@@ -55,48 +55,14 @@ const Navbar = () => {
                 className="block rounded-md px-3 py-2 text-base font-medium hover:text-purple">
                 Portfolio
               </Link>
-              <div className="relative group">
-                <button className="rounded-md px-3 py-2 text-sm font-medium  hover:text-purple">
-                  <Link href="/services">Services</Link>
-                  <svg
-                    className="-mt-1 ml-1 inline-block h-4 w-4 transform rotate-0"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="2"
-                      d="M5 9l7 7 7-7"></path>
-                  </svg>
-                </button>
-                <div className="absolute hidden min-w-max group-hover:block bg-white rounded-md shadow-lg">
-                  <Link
-                    href="/services"
-                    className="block px-4 py-2 text-sm hover:text-purple hover:bg-lightgreen/40">
-                    Web Development
-                  </Link>
-                  <Link
-                    href="/services"
-                    className="block px-4 py-2 text-sm hover:text-purple hover:bg-lightgreen/40">
-                    App Development
-                  </Link>
-                  <Link
-                    href="/services"
-                    className="block px-4 py-2 text-sm hover:text-purple hover:bg-lightgreen/40">
-                    Software Development
-                  </Link>
-                  <Link
-                    href="/services"
-                    className="block px-4 py-2 text-sm hover:text-purple hover:bg-lightgreen/40">
-                    Ecommerce Website
-                  </Link>
-                </div>
-              </div>
+              <Link
+                href="/services"
+                className="block rounded-md px-3 py-2 text-base font-medium hover:text-purple">
+                Services
+              </Link>
               <Link
                 href="/contact"
-                className="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:text-purple">
+                className="rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:text-purple">
                 Contact
               </Link>
             </div>
@@ -123,45 +89,11 @@ const Navbar = () => {
             className="block rounded-md px-3 py-2 text-base font-medium hover:text-purple">
             Portfolio
           </Link>
-          <div className="relative group items-center">
-            <button className="rounded-md px-3 py-2 text-sm font-medium hover:text-purple">
-              Services
-              <svg
-                className="-mt-1 ml-1 inline-block h-4 w-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M9 5l7 7-7 7"></path>
-              </svg>
-            </button>
-            <div className="absolute hidden group-hover:block rounded-md bg-gray-200 shadow-lg">
-              <Link
-                href="/services"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-lightgreen/40">
-                Web Development
-              </Link>
-              <Link
-                href="/services"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-lightgreen/40">
-                App Development
-              </Link>
-              <Link
-                href="/services"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-lightgreen/40">
-                Software Development
-              </Link>
-              <Link
-                href="/services"
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-lightgreen/40">
-                Ecommerce Website
-              </Link>
-            </div>
-          </div>
+          <Link
+            href="/services"
+            className="block rounded-md px-3 py-2 text-base font-medium hover:text-purple">
+            Services
+          </Link>
           <Link
             href="/contact"
             className="block rounded-md px-3 py-2 text-base font-medium hover:text-purple">
