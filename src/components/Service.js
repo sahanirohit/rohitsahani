@@ -1,34 +1,36 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const serviceData = [
   {
     serial: 1,
-    title: "Website Development",
+    imageURL: "/frontend_service.jpg",
+    title: "Web Development Services",
     tags: [
       "React JS Development",
       "Angular JS Development",
       "Laravel Development",
       "Vue JS Development",
     ],
-    para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, dolorem temporibus? Odio, repellat alias magni voluptas debitis consequuntur ducimus saepe quasi aperiam voluptates nemo, exercitationem nulla necessitatibus quos soluta est?",
-    imageURL: "/frontend_service.jpg",
+    para: "Bring your online vision to life with our professional web development services. Our experienced developers specialize in creating robust, responsive, and high-performing websites tailored to your specific needs. From e-commerce platforms to dynamic web applications, we build solutions that are not only visually appealing but also optimized for speed, security, and scalability.",
   },
   {
     serial: 2,
-    title: "Mobile App Development",
+    imageURL: "/mobile-app-design.jpg",
+    title: "Mobile App Design Services",
     tags: [
       "Android App Development",
       "iOS App Development",
       "Flutter App Development",
       "React Native App Development",
     ],
-    para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, dolorem temporibus? Odio, repellat alias magni voluptas debitis consequuntur ducimus saepe quasi aperiam voluptates nemo, exercitationem nulla necessitatibus quos soluta est?",
-    imageURL: "/frontend_service.jpg",
+    para: "Transform your ideas into engaging mobile experiences with our innovative mobile app design services. Our team of talented designers excels in creating intuitive, user-centric app interfaces that captivate users and enhance usability. From concept to final design, we focus on aesthetics, functionality, and seamless navigation to deliver apps that stand out in the competitive mobile landscape.",
   },
   {
     serial: 3,
-    title: "UI/UX Design",
+    imageURL: "/user-interface-design.jpg",
+    title: "User Interface Design Services",
     tags: [
       "User Research",
       "User Persona",
@@ -37,12 +39,12 @@ const serviceData = [
       "Prototyping",
       "Visual Design",
     ],
-    para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, dolorem temporibus? Odio, repellat alias magni voluptas debitis consequuntur ducimus saepe quasi aperiam voluptates nemo, exercitationem nulla necessitatibus quos soluta est?",
-    imageURL: "/frontend_service.jpg",
+    para: "Enhance your digital presence with our expert user interface design services. Our skilled designers specialize in creating intuitive, user-friendly interfaces that ensure a seamless and engaging experience for your audience. From web applications to mobile apps, we focus on usability, aesthetics, and functionality to deliver designs that not only look stunning but also enhance user satisfaction.",
   },
   {
     serial: 4,
-    title: "Graphic Design",
+    imageURL: "/graphic-design-service.jpg",
+    title: "Expert Graphic Design Services",
     tags: [
       "Packaging Design",
       "Infographic Design",
@@ -51,8 +53,7 @@ const serviceData = [
       "Print Design",
       "Digital Design",
     ],
-    para: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, dolorem temporibus? Odio, repellat alias magni voluptas debitis consequuntur ducimus saepe quasi aperiam voluptates nemo, exercitationem nulla necessitatibus quos soluta est?",
-    imageURL: "/frontend_service.jpg",
+    para: "Elevate your brand with our professional graphic design services. Our team of creative experts specializes in crafting visually captivating designs that communicate your message with clarity and impact. Whether you need a striking logo, engaging social media graphics, or eye-catching marketing materials, we deliver customized solutions that make your business stand out.",
   },
 ];
 
@@ -68,7 +69,7 @@ const Service = () => {
         {serviceData.map((service, serviceIndex) => (
           <div
             key={serviceIndex}
-            className="flex justify-between group md:flex-row flex-col gap-4 bg-white shadow-md ring-2 ring-grey mt-4 items-start p-4">
+            className="flex justify-between rounded-xl overflow-hidden group md:flex-row flex-col gap-4 bg-white shadow-md ring-2 ring-grey mt-4 items-start p-4">
             <div className="min-w-36 md:text-center">
               <h2 className="md:text-4xl text-2xl font-bold">
                 0{service.serial}
@@ -78,22 +79,25 @@ const Service = () => {
               <h1 className="md:text-3xl text-2xl font-bold">
                 {service.title}
               </h1>
-              <div className="flex flex-wrap gap-2 md:text-xl text-sm">
+              <div className="flex flex-wrap gap-2 text-sm">
                 {service.tags.map((tag, tagIndex) => (
                   <span
                     key={tagIndex}
-                    className="bg-lightgreen px-4 rounded-full py-2 shrink-0">
+                    className="bg-lightgreen px-3 rounded-full py-1 shrink-0">
                     {tag}
                   </span>
                 ))}
               </div>
-              <p className="md:text-base text-sm">{service.para}</p>
+              <p className="md:text-base text-sm group-hover:translate-x-0 group-hover:opacity-100 opacity-0 translate-x-full h-0 group-hover:h-full transition-all">
+                {service.para}
+              </p>
               {/* <div className="w-full h-full"> */}
-              <div className="group-hover:h-48 md:group-hover:h-96 overflow-hidden duration-500 group-hover:translate-y-0 group-hover:opacity-100 opacity-0 translate-y-full relative w-full rounded-2xl">
+              <div className="overflow-hidden duration-500 group-hover:translate-x-0 group-hover:opacity-100 opacity-0 translate-x-full h-0 group-hover:h-full transition-all w-full rounded-2xl">
                 <Image
                   src={service.imageURL} // Replace with your image path
                   alt="Descriptive alt text"
-                  layout="fill"
+                  width={500}
+                  height={350}
                   loading="lazy"
                   className=" rounded-2xl md:bg-contain bg-cover"
                 />
@@ -103,10 +107,12 @@ const Service = () => {
             <div className="">
               <div className="bg-grey inline-flex rounded-full sm:h-12 h-10 gap-2">
                 <button className="bg-[#A6EB3C] h-full w-auto rounded-full px-8 text-sm">
-                  View Details
+                  <Link href="/services">View Details</Link>
                 </button>
                 <div className="sm:w-10 sm:h-10 w-8 h-8 rounded-full shrink-0 bg-[#813CEB] m-1 flex items-center justify-center">
-                  <i className="fa-solid fa-arrow-right text-white text-lg"></i>
+                  <Link href="/services">
+                    <i className="fa-solid fa-arrow-right text-white text-lg"></i>
+                  </Link>
                 </div>
               </div>
             </div>

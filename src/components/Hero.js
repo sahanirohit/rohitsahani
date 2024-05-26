@@ -23,7 +23,7 @@ const Hero = () => {
               Portfolio
             </button>
             <button className="md:px-10 px-8 py-2 rounded-full ring-2 ring-lightgreen bg-lightgreen hover:bg-white hover:ring-lightgreen hover:text-purple duration-200 text-black font-medium">
-              Hire Me
+              <Link href="https://wa.me/918957912038">Hire Me</Link>
             </button>
           </div>
           <h2 className="text-2xl font-bold pt-4">Get in touch with us</h2>

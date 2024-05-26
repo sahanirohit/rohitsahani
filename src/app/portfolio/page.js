@@ -20,9 +20,9 @@ const page = () => {
           My Portfolio
         </h1>
         <div className="">
-          <ul className="flex gap-8 justify-center font-semibold">
+          <ul className="flex sm:gap-8 gap-2 flex-wrap sm:justify-center font-semibold">
             {filterCategories.map((categories, index) => (
-              <li className="" key={index}>
+              <li className=" shrink-0" key={index}>
                 <Link href="#">{categories}</Link>
               </li>
             ))}

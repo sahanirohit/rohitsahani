@@ -36,7 +36,7 @@ const page = () => {
         </div>
         <div className="">
           <button className="px-6 py-2 bg-lightgreen font-bold rounded-md shrink-0">
-            Hire Me
+            <Link href="https://wa.me/918957912038">Hire Me</Link>
           </button>
         </div>
         <div className="flex justify-between bg-purple p-8 text-white flex-wrap gap-4">

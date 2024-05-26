@@ -53,21 +53,21 @@ const page = () => {
     <>
       <Navbar />
       <div className="mx-auto max-w-screen-lg w-full px-4 space-y-4 sm:px-6 lg:px-4 py-4 mt-6">
-        <h1 className="text-5xl font-semibold text-center">
+        <h1 className="sm:text-5xl text-3xl font-semibold text-center">
           Explore <span className=" text-lightgreen">My Offerings</span> for You
         </h1>
-        <p className="text-center mx-28">
+        <p className="text-center md:mx-28 text-sm sm:text-base">
           Embark on a Design Journey: Discovering Tailored Solutions Infused
           with Passion, Precision, and Purpose to Shape Tommorrow's Experiences
         </p>
         <div className="py-12 space-y-8">
           {serviceList.map((service, serviceIndex) => (
             <div
-              className="flex flex-col gap-6 md:flex-row "
+              className="flex flex-col gap-6 md:flex-row items-center "
               key={serviceIndex}>
               <div
-                className={`sm:h-full basis-1/2 h-56 relative w-full rounded-2xl ${
-                  serviceIndex % 2 == 0 ? "order-1" : "order-2"
+                className={`sm:h-full basis-1/2 h-56 relative rounded-2xl ${
+                  serviceIndex % 2 == 0 ? "md:order-1" : "md:order-2"
                 }`}>
                 <Image
                   src={service.imageURL} // Replace with your image path
@@ -81,7 +81,7 @@ const page = () => {
               </div>
               <div
                 className={`space-y-4 basis-1/2 ${
-                  serviceIndex % 2 == 0 ? "order-2" : "order-1"
+                  serviceIndex % 2 == 0 ? "md:order-2" : "md:order-1"
                 }`}>
                 <h1 className="text-2xl font-semibold">{service.title}</h1>
                 {service.para.map((p, pIndex) => (
@@ -92,7 +92,7 @@ const page = () => {
 
                 <div className="space-x-4">
                   <button className="px-4 text-sm rounded-md py-2 border-2 border-purple bg-purple text-white font-semibold">
-                    <Link href="#">Let's Talk</Link>
+                    <Link href="https://wa.me/918957912038">Let's Talk</Link>
                   </button>
                 </div>
               </div>

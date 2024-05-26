@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const About = () => {
@@ -33,15 +34,15 @@ const About = () => {
           </div>
         </div>
         <div className="flex w-full flex-col sm:flex-row justify-between sm:h-12 h-10 rounded-full gap-4 items-start sm:items-center">
-          <div className="bg-black flex rounded-full sm:w-1/2 h-full gap-2">
+          <div className="bg-grey flex rounded-full h-full gap-2">
             <div className="sm:w-10 sm:h-10 w-8 h-8 rounded-full shrink-0 bg-[#813CEB] m-1 flex items-center justify-center">
               <i className="fa-solid fa-arrow-right text-white text-lg"></i>
             </div>
-            <button className="bg-[#A6EB3C] px-6 h-full w-full rounded-full text-sm">
-              Download CV
+            <button className="bg-[#A6EB3C] px-4 h-full w-full rounded-full text-sm">
+              <Link href="https://wa.me/918957912038">Let's Talk</Link>
             </button>
           </div>
-          <h2 className="hidden sm:block w-1/2 shrink-0">Rohit Sahani</h2>
+          {/* <h2 className="hidden sm:block shrink-0">Rohit Sahani</h2> */}
         </div>
       </div>
     </div>
